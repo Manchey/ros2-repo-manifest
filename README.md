@@ -63,7 +63,12 @@ pip install pyyaml
 
 # Convert repos file
 ./tools/vcs_to_manifest.py input.repos -o output.xml
+
+# Convert with base path (similar to 'vcs import src')
+./tools/vcs_to_manifest.py input.repos -o output.xml -p src
 ```
+
+The `-p/--path` option allows you to specify a base path that will be prepended to all repository paths in the manifest. For example, if you specify `-p src`, a repository that would normally be placed in `ros2/rclcpp` will instead be placed in `src/ros2/rclcpp`.
 
 ### Repository Structure
 
@@ -144,7 +149,12 @@ pip install pyyaml
 
 # 转换 repos 文件
 ./tools/vcs_to_manifest.py input.repos -o output.xml
+
+# 指定基础路径进行转换（类似于 'vcs import src'）
+./tools/vcs_to_manifest.py input.repos -o output.xml -p src
 ```
+
+`-p/--path` 选项允许您指定一个基础路径，这个路径会被添加到清单文件中所有仓库路径的前面。例如，如果您指定 `-p src`，原本应该放在 `ros2/rclcpp` 的仓库将会被放置在 `src/ros2/rclcpp`。
 
 ### 仓库结构
 

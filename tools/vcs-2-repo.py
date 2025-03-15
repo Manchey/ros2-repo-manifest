@@ -4,9 +4,10 @@ import yaml
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import argparse
+import os
 
 
-def convert_vcs_to_manifest(vcs_file, output_file):
+def convert_vcs_to_manifest(vcs_file, output_file, base_path=None):
     """Convert vcs repos file to repo manifest xml file"""
 
     # Read vcs file
@@ -36,7 +37,9 @@ def convert_vcs_to_manifest(vcs_file, output_file):
         repo_name = url.replace("https://github.com/", "")
 
         # Set project attributes
-        project.set("path", repo_path)
+        # If base_path is provided, prepend it to repo_path
+        final_path = os.path.join(base_path, repo_path) if base_path else repo_path
+        project.set("path", final_path)
         project.set("name", repo_name)
 
         # Set revision if not rolling
@@ -57,11 +60,12 @@ def main():
     parser.add_argument(
         "-o", "--output", default="default.xml", help="Output manifest file (default: default.xml)"
     )
+    parser.add_argument("-p", "--path", help="Base path to prepend to all repository paths")
 
     args = parser.parse_args()
 
     try:
-        convert_vcs_to_manifest(args.input, args.output)
+        convert_vcs_to_manifest(args.input, args.output, args.path)
         print(f"Successfully converted {args.input} to {args.output}")
     except Exception as e:
         print(f"Error converting file: {e}")

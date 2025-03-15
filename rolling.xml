@@ -1,134 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <manifest>
   <remote name="github" fetch="https://github.com"/>
-  
   <default revision="rolling" remote="github" sync-j="4"/>
 
   <!-- ament repos -->
-  <project path="ament/ament_cmake" name="ament/ament_cmake.git"/>
-  <project path="ament/ament_index" name="ament/ament_index.git"/>
-  <project path="ament/ament_lint" name="ament/ament_lint.git"/>
-  <project path="ament/ament_package" name="ament/ament_package.git"/>
-  <project path="ament/google_benchmark_vendor" name="ament/google_benchmark_vendor.git"/>
-  <project path="ament/googletest" name="ament/googletest.git"/>
-  <project path="ament/uncrustify_vendor" name="ament/uncrustify_vendor.git"/>
+  <project path="src/ament/ament_cmake" name="ament/ament_cmake.git"/>
+  <project path="src/ament/ament_index" name="ament/ament_index.git"/>
+  <project path="src/ament/ament_lint" name="ament/ament_lint.git"/>
+  <project path="src/ament/ament_package" name="ament/ament_package.git"/>
+  <project path="src/ament/google_benchmark_vendor" name="ament/google_benchmark_vendor.git"/>
+  <project path="src/ament/googletest" name="ament/googletest.git"/>
+  <project path="src/ament/uncrustify_vendor" name="ament/uncrustify_vendor.git"/>
 
   <!-- eProsima repos -->
-  <project path="eProsima/Fast-CDR" name="eProsima/Fast-CDR.git" revision="2.2.x"/>
-  <project path="eProsima/Fast-DDS" name="eProsima/Fast-DDS.git" revision="3.1.x"/>
-  <project path="eProsima/foonathan_memory_vendor" name="eProsima/foonathan_memory_vendor.git" revision="master"/>
+  <project path="src/eProsima/Fast-CDR" name="eProsima/Fast-CDR.git" revision="2.2.x"/>
+  <project path="src/eProsima/Fast-DDS" name="eProsima/Fast-DDS.git" revision="3.1.x"/>
+  <project path="src/eProsima/foonathan_memory_vendor" name="eProsima/foonathan_memory_vendor.git" revision="master"/>
 
   <!-- Eclipse repos -->
-  <project path="eclipse-cyclonedds/cyclonedds" name="eclipse-cyclonedds/cyclonedds.git" revision="releases/0.10.x"/>
-  <project path="eclipse-iceoryx/iceoryx" name="eclipse-iceoryx/iceoryx.git" revision="release_2.0"/>
+  <project path="src/eclipse-cyclonedds/cyclonedds" name="eclipse-cyclonedds/cyclonedds.git" revision="releases/0.10.x"/>
+  <project path="src/eclipse-iceoryx/iceoryx" name="eclipse-iceoryx/iceoryx.git" revision="release_2.0"/>
 
   <!-- gazebo repos -->
-  <project path="gazebo-release/gz_cmake_vendor" name="gazebo-release/gz_cmake_vendor.git"/>
-  <project path="gazebo-release/gz_math_vendor" name="gazebo-release/gz_math_vendor.git"/>
-  <project path="gazebo-release/gz_utils_vendor" name="gazebo-release/gz_utils_vendor.git"/>
+  <project path="src/gazebo-release/gz_cmake_vendor" name="gazebo-release/gz_cmake_vendor.git"/>
+  <project path="src/gazebo-release/gz_math_vendor" name="gazebo-release/gz_math_vendor.git"/>
+  <project path="src/gazebo-release/gz_utils_vendor" name="gazebo-release/gz_utils_vendor.git"/>
 
   <!-- osrf repos -->
-  <project path="osrf/osrf_pycommon" name="osrf/osrf_pycommon.git" revision="master"/>
-  <project path="osrf/osrf_testing_tools_cpp" name="osrf/osrf_testing_tools_cpp.git"/>
+  <project path="src/osrf/osrf_pycommon" name="osrf/osrf_pycommon.git" revision="master"/>
+  <project path="src/osrf/osrf_testing_tools_cpp" name="osrf/osrf_testing_tools_cpp.git"/>
 
   <!-- ros-perception repos -->
-  <project path="ros-perception/image_common" name="ros-perception/image_common.git"/>
-  <project path="ros-perception/laser_geometry" name="ros-perception/laser_geometry.git"/>
-  <project path="ros-perception/point_cloud_transport" name="ros-perception/point_cloud_transport.git"/>
+  <project path="src/ros-perception/image_common" name="ros-perception/image_common.git"/>
+  <project path="src/ros-perception/laser_geometry" name="ros-perception/laser_geometry.git"/>
+  <project path="src/ros-perception/point_cloud_transport" name="ros-perception/point_cloud_transport.git"/>
 
   <!-- ros-planning repos -->
-  <project path="ros-planning/navigation_msgs" name="ros-planning/navigation_msgs.git"/>
+  <project path="src/ros-planning/navigation_msgs" name="ros-planning/navigation_msgs.git"/>
 
   <!-- ros-tooling repos -->
-  <project path="ros-tooling/keyboard_handler" name="ros-tooling/keyboard_handler.git"/>
-  <project path="ros-tooling/libstatistics_collector" name="ros-tooling/libstatistics_collector.git"/>
+  <project path="src/ros-tooling/keyboard_handler" name="ros-tooling/keyboard_handler.git"/>
+  <project path="src/ros-tooling/libstatistics_collector" name="ros-tooling/libstatistics_collector.git"/>
 
   <!-- ros-visualization repos -->
-  <project path="ros-visualization/interactive_markers" name="ros-visualization/interactive_markers.git"/>
-  <project path="ros-visualization/python_qt_binding" name="ros-visualization/python_qt_binding.git"/>
-  <project path="ros-visualization/qt_gui_core" name="ros-visualization/qt_gui_core.git"/>
-  <project path="ros-visualization/rqt" name="ros-visualization/rqt.git"/>
-  <project path="ros-visualization/rqt_action" name="ros-visualization/rqt_action.git"/>
-  <project path="ros-visualization/rqt_bag" name="ros-visualization/rqt_bag.git"/>
-  <project path="ros-visualization/rqt_console" name="ros-visualization/rqt_console.git"/>
-  <project path="ros-visualization/rqt_graph" name="ros-visualization/rqt_graph.git"/>
-  <project path="ros-visualization/rqt_msg" name="ros-visualization/rqt_msg.git"/>
-  <project path="ros-visualization/rqt_plot" name="ros-visualization/rqt_plot.git"/>
-  <project path="ros-visualization/rqt_publisher" name="ros-visualization/rqt_publisher.git"/>
-  <project path="ros-visualization/rqt_py_console" name="ros-visualization/rqt_py_console.git"/>
-  <project path="ros-visualization/rqt_reconfigure" name="ros-visualization/rqt_reconfigure.git"/>
-  <project path="ros-visualization/rqt_service_caller" name="ros-visualization/rqt_service_caller.git"/>
-  <project path="ros-visualization/rqt_shell" name="ros-visualization/rqt_shell.git"/>
-  <project path="ros-visualization/rqt_srv" name="ros-visualization/rqt_srv.git"/>
-  <project path="ros-visualization/rqt_topic" name="ros-visualization/rqt_topic.git"/>
-  <project path="ros-visualization/tango_icons_vendor" name="ros-visualization/tango_icons_vendor.git"/>
+  <project path="src/ros-visualization/interactive_markers" name="ros-visualization/interactive_markers.git"/>
+  <project path="src/ros-visualization/python_qt_binding" name="ros-visualization/python_qt_binding.git"/>
+  <project path="src/ros-visualization/qt_gui_core" name="ros-visualization/qt_gui_core.git"/>
+  <project path="src/ros-visualization/rqt" name="ros-visualization/rqt.git"/>
+  <project path="src/ros-visualization/rqt_action" name="ros-visualization/rqt_action.git"/>
+  <project path="src/ros-visualization/rqt_bag" name="ros-visualization/rqt_bag.git"/>
+  <project path="src/ros-visualization/rqt_console" name="ros-visualization/rqt_console.git"/>
+  <project path="src/ros-visualization/rqt_graph" name="ros-visualization/rqt_graph.git"/>
+  <project path="src/ros-visualization/rqt_msg" name="ros-visualization/rqt_msg.git"/>
+  <project path="src/ros-visualization/rqt_plot" name="ros-visualization/rqt_plot.git"/>
+  <project path="src/ros-visualization/rqt_publisher" name="ros-visualization/rqt_publisher.git"/>
+  <project path="src/ros-visualization/rqt_py_console" name="ros-visualization/rqt_py_console.git"/>
+  <project path="src/ros-visualization/rqt_reconfigure" name="ros-visualization/rqt_reconfigure.git"/>
+  <project path="src/ros-visualization/rqt_service_caller" name="ros-visualization/rqt_service_caller.git"/>
+  <project path="src/ros-visualization/rqt_shell" name="ros-visualization/rqt_shell.git"/>
+  <project path="src/ros-visualization/rqt_srv" name="ros-visualization/rqt_srv.git"/>
+  <project path="src/ros-visualization/rqt_topic" name="ros-visualization/rqt_topic.git"/>
+  <project path="src/ros-visualization/tango_icons_vendor" name="ros-visualization/tango_icons_vendor.git"/>
 
   <!-- ros repos -->
-  <project path="ros/class_loader" name="ros/class_loader.git"/>
-  <project path="ros/kdl_parser" name="ros/kdl_parser.git"/>
-  <project path="ros/pluginlib" name="ros/pluginlib.git"/>
-  <project path="ros/resource_retriever" name="ros/resource_retriever.git"/>
-  <project path="ros/robot_state_publisher" name="ros/robot_state_publisher.git"/>
-  <project path="ros/ros_environment" name="ros/ros_environment.git"/>
-  <project path="ros/ros_tutorials" name="ros/ros_tutorials.git"/>
-  <project path="ros/urdfdom" name="ros/urdfdom.git" revision="master"/>
-  <project path="ros/urdfdom_headers" name="ros/urdfdom_headers.git" revision="master"/>
+  <project path="src/ros/class_loader" name="ros/class_loader.git"/>
+  <project path="src/ros/kdl_parser" name="ros/kdl_parser.git"/>
+  <project path="src/ros/pluginlib" name="ros/pluginlib.git"/>
+  <project path="src/ros/resource_retriever" name="ros/resource_retriever.git"/>
+  <project path="src/ros/robot_state_publisher" name="ros/robot_state_publisher.git"/>
+  <project path="src/ros/ros_environment" name="ros/ros_environment.git"/>
+  <project path="src/ros/ros_tutorials" name="ros/ros_tutorials.git"/>
+  <project path="src/ros/urdfdom" name="ros/urdfdom.git" revision="master"/>
+  <project path="src/ros/urdfdom_headers" name="ros/urdfdom_headers.git" revision="master"/>
 
-  <!-- ros2 core repos -->
-  <project path="ros2/ament_cmake_ros" name="ros2/ament_cmake_ros.git"/>
-  <project path="ros2/common_interfaces" name="ros2/common_interfaces.git"/>
-  <project path="ros2/console_bridge_vendor" name="ros2/console_bridge_vendor.git"/>
-  <project path="ros2/demos" name="ros2/demos.git"/>
-  <project path="ros2/eigen3_cmake_module" name="ros2/eigen3_cmake_module.git"/>
-  <project path="ros2/example_interfaces" name="ros2/example_interfaces.git"/>
-  <project path="ros2/examples" name="ros2/examples.git"/>
-  <project path="ros2/geometry2" name="ros2/geometry2.git"/>
-  <project path="ros2/launch" name="ros2/launch.git"/>
-  <project path="ros2/launch_ros" name="ros2/launch_ros.git"/>
-  <project path="ros2/libyaml_vendor" name="ros2/libyaml_vendor.git"/>
-  <project path="ros2/message_filters" name="ros2/message_filters.git"/>
-  <project path="ros2/mimick_vendor" name="ros2/mimick_vendor.git"/>
-  <project path="ros2/orocos_kdl_vendor" name="ros2/orocos_kdl_vendor.git"/>
-  <project path="ros2/performance_test_fixture" name="ros2/performance_test_fixture.git"/>
-  <project path="ros2/pybind11_vendor" name="ros2/pybind11_vendor.git"/>
-  <project path="ros2/rcl" name="ros2/rcl.git"/>
-  <project path="ros2/rcl_interfaces" name="ros2/rcl_interfaces.git"/>
-  <project path="ros2/rcl_logging" name="ros2/rcl_logging.git"/>
-  <project path="ros2/rclcpp" name="ros2/rclcpp.git"/>
-  <project path="ros2/rclpy" name="ros2/rclpy.git"/>
-  <project path="ros2/rcpputils" name="ros2/rcpputils.git"/>
-  <project path="ros2/rcutils" name="ros2/rcutils.git"/>
-  <project path="ros2/realtime_support" name="ros2/realtime_support.git"/>
-  <project path="ros2/rmw" name="ros2/rmw.git"/>
-  <project path="ros2/rmw_connextdds" name="ros2/rmw_connextdds.git"/>
-  <project path="ros2/rmw_cyclonedds" name="ros2/rmw_cyclonedds.git"/>
-  <project path="ros2/rmw_dds_common" name="ros2/rmw_dds_common.git"/>
-  <project path="ros2/rmw_fastrtps" name="ros2/rmw_fastrtps.git"/>
-  <project path="ros2/rmw_implementation" name="ros2/rmw_implementation.git"/>
-  <project path="ros2/ros2_tracing" name="ros2/ros2_tracing.git"/>
-  <project path="ros2/ros2cli" name="ros2/ros2cli.git"/>
-  <project path="ros2/ros2cli_common_extensions" name="ros2/ros2cli_common_extensions.git"/>
-  <project path="ros2/ros_testing" name="ros2/ros_testing.git"/>
-  <project path="ros2/rosbag2" name="ros2/rosbag2.git"/>
-  <project path="ros2/rosidl" name="ros2/rosidl.git"/>
-  <project path="ros2/rosidl_core" name="ros2/rosidl_core.git"/>
-  <project path="ros2/rosidl_dds" name="ros2/rosidl_dds.git"/>
-  <project path="ros2/rosidl_defaults" name="ros2/rosidl_defaults.git"/>
-  <project path="ros2/rosidl_dynamic_typesupport" name="ros2/rosidl_dynamic_typesupport.git"/>
-  <project path="ros2/rosidl_dynamic_typesupport_fastrtps" name="ros2/rosidl_dynamic_typesupport_fastrtps.git"/>
-  <project path="ros2/rosidl_python" name="ros2/rosidl_python.git"/>
-  <project path="ros2/rosidl_runtime_py" name="ros2/rosidl_runtime_py.git"/>
-  <project path="ros2/rosidl_typesupport" name="ros2/rosidl_typesupport.git"/>
-  <project path="ros2/rosidl_typesupport_fastrtps" name="ros2/rosidl_typesupport_fastrtps.git"/>
-  <project path="ros2/rpyutils" name="ros2/rpyutils.git"/>
-  <project path="ros2/rviz" name="ros2/rviz.git"/>
-  <project path="ros2/spdlog_vendor" name="ros2/spdlog_vendor.git"/>
-  <project path="ros2/sros2" name="ros2/sros2.git"/>
-  <project path="ros2/system_tests" name="ros2/system_tests.git"/>
-  <project path="ros2/test_interface_files" name="ros2/test_interface_files.git"/>
-  <project path="ros2/tinyxml2_vendor" name="ros2/tinyxml2_vendor.git"/>
-  <project path="ros2/tlsf" name="ros2/tlsf.git"/>
-  <project path="ros2/unique_identifier_msgs" name="ros2/unique_identifier_msgs.git"/>
-  <project path="ros2/urdf" name="ros2/urdf.git"/>
-  <project path="ros2/yaml_cpp_vendor" name="ros2/yaml_cpp_vendor.git"/>
+  <!-- ros2 repos -->
+  <project path="src/ros2/ament_cmake_ros" name="ros2/ament_cmake_ros.git"/>
+  <project path="src/ros2/common_interfaces" name="ros2/common_interfaces.git"/>
+  <project path="src/ros2/console_bridge_vendor" name="ros2/console_bridge_vendor.git"/>
+  <project path="src/ros2/demos" name="ros2/demos.git"/>
+  <project path="src/ros2/eigen3_cmake_module" name="ros2/eigen3_cmake_module.git"/>
+  <project path="src/ros2/example_interfaces" name="ros2/example_interfaces.git"/>
+  <project path="src/ros2/examples" name="ros2/examples.git"/>
+  <project path="src/ros2/geometry2" name="ros2/geometry2.git"/>
+  <project path="src/ros2/launch" name="ros2/launch.git"/>
+  <project path="src/ros2/launch_ros" name="ros2/launch_ros.git"/>
+  <project path="src/ros2/libyaml_vendor" name="ros2/libyaml_vendor.git"/>
+  <project path="src/ros2/message_filters" name="ros2/message_filters.git"/>
+  <project path="src/ros2/mimick_vendor" name="ros2/mimick_vendor.git"/>
+  <project path="src/ros2/orocos_kdl_vendor" name="ros2/orocos_kdl_vendor.git"/>
+  <project path="src/ros2/performance_test_fixture" name="ros2/performance_test_fixture.git"/>
+  <project path="src/ros2/pybind11_vendor" name="ros2/pybind11_vendor.git"/>
+  <project path="src/ros2/rcl" name="ros2/rcl.git"/>
+  <project path="src/ros2/rcl_interfaces" name="ros2/rcl_interfaces.git"/>
+  <project path="src/ros2/rcl_logging" name="ros2/rcl_logging.git"/>
+  <project path="src/ros2/rclcpp" name="ros2/rclcpp.git"/>
+  <project path="src/ros2/rclpy" name="ros2/rclpy.git"/>
+  <project path="src/ros2/rcpputils" name="ros2/rcpputils.git"/>
+  <project path="src/ros2/rcutils" name="ros2/rcutils.git"/>
+  <project path="src/ros2/realtime_support" name="ros2/realtime_support.git"/>
+  <project path="src/ros2/rmw" name="ros2/rmw.git"/>
+  <project path="src/ros2/rmw_connextdds" name="ros2/rmw_connextdds.git"/>
+  <project path="src/ros2/rmw_cyclonedds" name="ros2/rmw_cyclonedds.git"/>
+  <project path="src/ros2/rmw_dds_common" name="ros2/rmw_dds_common.git"/>
+  <project path="src/ros2/rmw_fastrtps" name="ros2/rmw_fastrtps.git"/>
+  <project path="src/ros2/rmw_implementation" name="ros2/rmw_implementation.git"/>
+  <project path="src/ros2/ros2_tracing" name="ros2/ros2_tracing.git"/>
+  <project path="src/ros2/ros2cli" name="ros2/ros2cli.git"/>
+  <project path="src/ros2/ros2cli_common_extensions" name="ros2/ros2cli_common_extensions.git"/>
+  <project path="src/ros2/ros_testing" name="ros2/ros_testing.git"/>
+  <project path="src/ros2/rosbag2" name="ros2/rosbag2.git"/>
+  <project path="src/ros2/rosidl" name="ros2/rosidl.git"/>
+  <project path="src/ros2/rosidl_core" name="ros2/rosidl_core.git"/>
+  <project path="src/ros2/rosidl_dds" name="ros2/rosidl_dds.git"/>
+  <project path="src/ros2/rosidl_defaults" name="ros2/rosidl_defaults.git"/>
+  <project path="src/ros2/rosidl_dynamic_typesupport" name="ros2/rosidl_dynamic_typesupport.git"/>
+  <project path="src/ros2/rosidl_dynamic_typesupport_fastrtps" name="ros2/rosidl_dynamic_typesupport_fastrtps.git"/>
+  <project path="src/ros2/rosidl_python" name="ros2/rosidl_python.git"/>
+  <project path="src/ros2/rosidl_runtime_py" name="ros2/rosidl_runtime_py.git"/>
+  <project path="src/ros2/rosidl_typesupport" name="ros2/rosidl_typesupport.git"/>
+  <project path="src/ros2/rosidl_typesupport_fastrtps" name="ros2/rosidl_typesupport_fastrtps.git"/>
+  <project path="src/ros2/rpyutils" name="ros2/rpyutils.git"/>
+  <project path="src/ros2/rviz" name="ros2/rviz.git"/>
+  <project path="src/ros2/spdlog_vendor" name="ros2/spdlog_vendor.git"/>
+  <project path="src/ros2/sros2" name="ros2/sros2.git"/>
+  <project path="src/ros2/system_tests" name="ros2/system_tests.git"/>
+  <project path="src/ros2/test_interface_files" name="ros2/test_interface_files.git"/>
+  <project path="src/ros2/tinyxml2_vendor" name="ros2/tinyxml2_vendor.git"/>
+  <project path="src/ros2/tlsf" name="ros2/tlsf.git"/>
+  <project path="src/ros2/unique_identifier_msgs" name="ros2/unique_identifier_msgs.git"/>
+  <project path="src/ros2/urdf" name="ros2/urdf.git"/>
+  <project path="src/ros2/yaml_cpp_vendor" name="ros2/yaml_cpp_vendor.git"/>
 </manifest>
